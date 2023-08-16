@@ -1,0 +1,488 @@
+/*outline: 1px solid red;*/
+/*styling sheet*/
+@font-face {
+    font-family: 'disgusting_behaviorregular';
+    src: url('../fonts/disgb___-webfont.woff2') format('woff2'),
+         url('../fonts/disgb___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    color: #AF3B6E;
+    font: normal clamp(60px, 12vw, 150px) 'disgusting_behaviorregular';
+    line-height: 100%;
+}
+h2 {
+    color:#AF3B6E;
+    font: normal clamp(50px, 6vw, 80px) 'disgusting_behaviorregular';
+}
+h3 {
+    font: normal 300 clamp(16px, 2vw, 20px) "Merriweather Sans", sans-serif;
+}
+p {
+    font: normal 400 clamp(12px, 1.5vw, 16px) "Merriweather Sans", sans-serif;
+}
+/*Navigation Bar*/
+header {
+    display: flex;
+    background-color: #949ABF;
+    position: fixed;
+    max-width: 66.25%;
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    left: 16.875%;
+    right: 16.875%;
+    top: 0px;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    z-index: 1;
+    padding-left: 4px;
+}
+.logo {
+    display: flex;
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+    flex-grow: 1;
+    justify-self: left;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo img {
+    transition: 1s;
+    max-width: 100%;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+}
+.logo img:hover {
+    transform: rotate(360deg);
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    max-width: 100%;
+    min-width: 0;
+    gap: 16px;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.navbar img {
+    transition: 1s;
+    max-width: 100%;
+    width: 72px;
+    height: 72px;
+    display: block;
+}
+.navbar img:hover {
+    transform: rotate(360deg);
+}
+/*Start of main page*/
+body {
+    background-color: #F4F0ED;
+    padding-top: 88px;
+}
+/*Section heroImg*/
+.heroImg {
+        width: 66.25%;
+        max-height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 44.33% 53.78%;
+        grid-template-rows: 76.82% 19.09%;
+        grid-template-areas:
+        "portrait name"
+        "portrait designer";
+        gap: 8.18% 3.78%;
+        background-color: #F7DD72;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 14px;
+}
+.hero {
+    width: 100%;
+    height: auto;
+    max-width: 306px;
+    max-height: 412px;
+    object-fit: contain;
+    grid-area: portrait;
+    align-self: center;
+    justify-self: center;
+    display: inline-block;
+    padding-bottom: 2%;
+}
+.heroImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    align-self: center;
+    justify-self: center;
+}
+.name {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: start;
+    grid-area: name;
+}
+.name h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 296px;
+}
+.name-oneline {
+    display: none;
+}
+.designer{
+    grid-area: designer;
+    align-self: start;
+    justify-self: center;
+    color:#AF3B6E;
+    width: 80%;
+    text-align: center;
+}
+/*Section aboutme*/
+.aboutme {
+    max-width: 100%;
+    width: 66.25%;
+    margin: 0px auto 0px auto;
+    display: grid;
+    grid-template-columns: .5fr repeat(3, minmax(0, 1fr)) .5fr;
+    grid-template-areas:
+    ". background skills programs .";
+    padding: 1%;
+    gap: 1%;
+    justify-items: center;
+}
+.background {
+    width: 100%;
+    height: auto;
+    max-width: 248px;
+    grid-area: background;
+}
+.background img {
+    width: 100%;
+    height: auto;
+}
+.skills {
+    width: 100%;
+    height: auto;
+    max-height: 142px;
+    max-width: 248px;
+    grid-area: skills;
+}
+.skills img {
+    width: 100%;
+    height: auto;
+}
+.programs {
+    width: 100%;
+    height: auto;
+    max-height: 142px;
+    max-width: 248px;
+    grid-area: programs;
+}
+.programs img {
+    width: 100%;
+    height: auto;
+}
+/*Section greatesthits*/
+.greatesthits {
+    width: 66.25%;
+    max-height:10.72%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: .5fr repeat(3, minmax(0, 1fr)) .5fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "greatesthits greatesthits greatesthits greatesthits greatesthits"
+    ". kidventures perpal ndlb .";
+    padding: 1%;
+    gap: 2% 2%;
+    justify-items: center;
+
+}
+.ghtitle {
+    grid-area: greatesthits;
+    background: #F7DD72;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 100%;
+    max-height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.greatesthits h2 {
+    margin: auto;
+    text-align: center;
+
+}
+.kidventures {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-area: kidventures;
+    background: #949ABF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+}
+.kidventures img {
+    align-self: center;
+    max-width: 136px;
+    max-height: 68px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kidventures h3 {
+    text-align: center;
+}
+.perpal {
+    grid-area: perpal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    background: #949ABF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2%;
+}
+.perpal img {
+    align-self: center;
+    max-width: 136px;
+    max-height: 84px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.perpal h3 {
+    text-align: center;
+}
+.ndlb {
+    grid-area: ndlb;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    background: #949ABF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2%;
+}
+.ndlb img {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    max-width: 136px;
+    max-height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ndlb h3 {
+    text-align: center;
+}
+/*Section thankyou*/
+.thankyou {
+    flex: 1 1 0px;
+    text-align: center;
+    width: 66.25%;
+    margin: 1% auto 1% auto;
+    background-color: #F7DD72;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.thankyou h2 {
+    margin: auto;
+}
+.tymobile {
+    display: none;
+}
+/*Start of Footer*/
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 63.75%;
+
+}
+/*Section getintouch*/
+.getintouch {
+    display: flex;
+    flex-direction:row;
+    background-color: #F7DD72;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    gap: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.getintouch h2 {
+    position: center;
+    text-align: center;
+    margin: auto;
+    line-height: 100%;
+}
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    max-height: 50px;
+}
+.getintouch h3 {
+    text-align: center;
+    position: right;
+    justify-self: center;
+    color: #AF3B6E;
+    max-height: 50px;
+}
+.socials {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+}
+.socials img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    max-width: 50px;
+    display: inline-block;
+}
+.copyright {
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    bottom:0;
+}
+/*media queries*/
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        max-width: 80px;
+        width: 22%;
+        height: 460px;
+        max-height: 85%;
+        left: 0px;
+        top: 2%;
+        padding-top: 4px;
+        padding-left:0px;
+    }
+    .navbar {
+        flex-direction: column;
+        max-height: 100%;
+        height: 384px;
+        min-height: 0;
+        justify-content: center;
+        align-content: end;
+        gap: 1%;
+        flex-grow: 1;
+    }
+    body {
+        padding-left: min(80px, 22%);
+        padding-top: 2%;
+    }
+    .heroImg {
+        width: 95%;
+        grid-template-rows: 75% 25%;
+        grid-template-areas:
+        "name name"
+        "designer designer";
+        gap: 0;
+        padding-bottom: calc(8px + 1%);
+        padding-top: calc(8px + 1%);
+
+    }
+    .heroImg img {
+        display: none;
+    }
+    .name {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+    .name-twolines {
+        display: none;
+    }
+    .name-oneline {
+        display: inline-block;
+    }
+    .aboutme {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "background"
+        "skills" 
+        "programs";
+    }
+    .background {
+        max-width: auto;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: auto;
+    }
+    .programs {
+        max-width: auto;
+    }
+    .greatesthits {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "greatesthits"
+        "kidventures"
+        "perpal"
+        "ndlb";
+        margin-top: 2%;
+    }
+    .thankyou {
+        width: 95%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .tymobile {
+        display: inline-block;
+        text-align: center;
+    }
+    .tydesktop {
+        display: none;
+    }
+    footer {
+        width: 85%;
+    }
+    .getintouch {
+        flex-direction: column;
+    }
+    .socials {
+        order: 2;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/*
+outline: 1px solid red;
+
+
+*/
