@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +21,7 @@ h2 {
     font: normal clamp(50px, 6vw, 80px) 'disgusting_behaviorregular';
 }
 h3 {
-    font: normal 300 clamp(16px, 2vw, 20px) "Merriweather Sans", sans-serif;
+    font: normal 300 clamp(14px, 1.5vw, 20px) "Merriweather Sans", sans-serif;
 }
 p {
     font: normal 400 clamp(12px, 1.5vw, 16px) "Merriweather Sans", sans-serif;
