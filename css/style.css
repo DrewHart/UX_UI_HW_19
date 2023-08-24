@@ -155,11 +155,11 @@ body {
     width: 66.25%;
     margin: 0px auto 0px auto;
     display: grid;
-    grid-template-columns: .5fr repeat(3, minmax(0, 1fr)) .5fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-areas:
-    ". background skills programs .";
+    "background skills programs";
     padding: 1%;
-    gap: 1%;
+    gap: 2%;
     justify-items: center;
 }
 .background {
