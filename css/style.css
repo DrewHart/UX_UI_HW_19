@@ -13,15 +13,15 @@ html {
 }
 h1 {
     color: #AF3B6E;
-    font: normal clamp(60px, 12vw, 150px) 'disgusting_behaviorregular';
+    font: normal clamp(3.25rem, 1.2083rem + 9.0741vw, 9.375rem) 'disgusting_behaviorregular';
     line-height: 100%;
 }
 h2 {
     color:#AF3B6E;
-    font: normal clamp(50px, 6vw, 80px) 'disgusting_behaviorregular';
+    font: normal clamp(2.75rem, 2.3333rem + 1.8519vw, 4rem) 'disgusting_behaviorregular';
 }
 h3 {
-    font: normal 300 clamp(14px, 1.5vw, 20px) "Merriweather Sans", sans-serif;
+    font: normal 300 /*clamp(14px, 1.5vw, 20px)*/14px "Merriweather Sans", sans-serif;
 }
 p {
     font: normal 400 clamp(12px, 1.5vw, 16px) "Merriweather Sans", sans-serif;
@@ -201,11 +201,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: .5fr repeat(3, minmax(0, 1fr)) .5fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 25% 75%;
     grid-template-areas:
-    "greatesthits greatesthits greatesthits greatesthits greatesthits"
-    ". kidventures perpal ndlb .";
+    "greatesthits greatesthits greatesthits"
+    "kidventures perpal ndlb";
     padding: 1%;
     gap: 2% 2%;
     justify-items: center;
@@ -234,8 +234,6 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     padding: 2%;
-    width: 100%;
-    height: auto;
 }
 .kidventures img {
     align-self: center;
@@ -334,8 +332,6 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     gap: 8px;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 .getintouch h2 {
     position: center;
@@ -378,7 +374,7 @@ footer {
     bottom:0;
 }
 /*media queries*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     header {
         flex-direction: column;
         max-width: 80px;
@@ -458,11 +454,21 @@ footer {
         "perpal"
         "ndlb";
         margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .kidventures {
+        width: 248px;
+    }
+    .perpal {
+        width: 248px;
+    }
+    .ndlb {
+        width: 248px;
     }
     .thankyou {
         width: 95%;
-        margin-top: 4%;
-        margin-bottom: 4%;
+        margin-bottom: 2%;
+        margin-top: 2%;
     }
     .tymobile {
         display: inline-block;
